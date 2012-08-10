@@ -1,0 +1,5 @@
+C:\Users\mmeliendrez\Documents\GitHub\NewsAtAGlance\NewsAtAGlance\NewsAtAGlance\NewsAtAGlance.Model\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\mmeliendrez\Documents\GitHub\NewsAtAGlance\NewsAtAGlance\NewsAtAGlance\NewsAtAGlance.Model\bin\Debug\NewsAtAGlance.Model.dll
+C:\Users\mmeliendrez\Documents\GitHub\NewsAtAGlance\NewsAtAGlance\NewsAtAGlance\NewsAtAGlance.Model\bin\Debug\NewsAtAGlance.Model.pdb
+C:\Users\mmeliendrez\Documents\GitHub\NewsAtAGlance\NewsAtAGlance\NewsAtAGlance\NewsAtAGlance.Model\obj\Debug\NewsAtAGlance.Model.dll
+C:\Users\mmeliendrez\Documents\GitHub\NewsAtAGlance\NewsAtAGlance\NewsAtAGlance\NewsAtAGlance.Model\obj\Debug\NewsAtAGlance.Model.pdb
