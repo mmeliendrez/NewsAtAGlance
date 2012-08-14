@@ -1,0 +1,11 @@
+C:\Users\mmeliendrez\Documents\GitHub\NewsAtAGlance\NewsAtAGlance\NewsAtAGlance\NewsAtAGlanc\bin\NewsAtAGlanc.dll
+C:\Users\mmeliendrez\Documents\GitHub\NewsAtAGlance\NewsAtAGlance\NewsAtAGlance\NewsAtAGlanc\bin\NewsAtAGlanc.pdb
+C:\Users\mmeliendrez\Documents\GitHub\NewsAtAGlance\NewsAtAGlance\NewsAtAGlance\NewsAtAGlanc\bin\EntityFramework.dll
+C:\Users\mmeliendrez\Documents\GitHub\NewsAtAGlance\NewsAtAGlance\NewsAtAGlance\NewsAtAGlanc\bin\NewsAtAGlance.Model.dll
+C:\Users\mmeliendrez\Documents\GitHub\NewsAtAGlance\NewsAtAGlance\NewsAtAGlance\NewsAtAGlanc\bin\NewsAtAGlance.Repository.dll
+C:\Users\mmeliendrez\Documents\GitHub\NewsAtAGlance\NewsAtAGlance\NewsAtAGlance\NewsAtAGlanc\bin\NewsAtAGlance.Model.pdb
+C:\Users\mmeliendrez\Documents\GitHub\NewsAtAGlance\NewsAtAGlance\NewsAtAGlance\NewsAtAGlanc\bin\NewsAtAGlance.Repository.pdb
+C:\Users\mmeliendrez\Documents\GitHub\NewsAtAGlance\NewsAtAGlance\NewsAtAGlance\NewsAtAGlanc\bin\EntityFramework.xml
+C:\Users\mmeliendrez\Documents\GitHub\NewsAtAGlance\NewsAtAGlance\NewsAtAGlance\NewsAtAGlanc\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\mmeliendrez\Documents\GitHub\NewsAtAGlance\NewsAtAGlance\NewsAtAGlance\NewsAtAGlanc\obj\Debug\NewsAtAGlanc.dll
+C:\Users\mmeliendrez\Documents\GitHub\NewsAtAGlance\NewsAtAGlance\NewsAtAGlance\NewsAtAGlanc\obj\Debug\NewsAtAGlanc.pdb

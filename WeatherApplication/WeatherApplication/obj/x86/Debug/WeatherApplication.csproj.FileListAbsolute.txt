@@ -1,0 +1,5 @@
+C:\Users\mmeliendrez\Documents\GitHub\NewsAtAGlance\NewsAtAGlance\WeatherApplication\WeatherApplication\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\mmeliendrez\Documents\GitHub\NewsAtAGlance\NewsAtAGlance\WeatherApplication\WeatherApplication\bin\Debug\WeatherApplication.exe
+C:\Users\mmeliendrez\Documents\GitHub\NewsAtAGlance\NewsAtAGlance\WeatherApplication\WeatherApplication\bin\Debug\WeatherApplication.pdb
+C:\Users\mmeliendrez\Documents\GitHub\NewsAtAGlance\NewsAtAGlance\WeatherApplication\WeatherApplication\obj\x86\Debug\WeatherApplication.exe
+C:\Users\mmeliendrez\Documents\GitHub\NewsAtAGlance\NewsAtAGlance\WeatherApplication\WeatherApplication\obj\x86\Debug\WeatherApplication.pdb

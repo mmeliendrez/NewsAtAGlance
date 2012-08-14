@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace AccountAtAGlance.Model
+namespace NewsAtAGlance.Model
 {
     [DebuggerDisplay("Status: {Status}")]
     public class OperationStatus
