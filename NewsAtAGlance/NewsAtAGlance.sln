@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsAtAGlance.Model", "News
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsAtAGlance.Repository", "NewsAtAGlance.Repository\NewsAtAGlance.Repository.csproj", "{2E2C204A-5811-46D9-911B-694FD287E00F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsAtAGlance", "NewsAtAGlanc\NewsAtAGlance.csproj", "{26850C4D-1DDE-445A-9CC7-8BD6EAC5438D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsAtAGlance", "NewsAtAGlance\NewsAtAGlance.csproj", "{26850C4D-1DDE-445A-9CC7-8BD6EAC5438D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

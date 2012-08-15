@@ -1,0 +1,127 @@
+﻿@{
+    ViewBag.Title = "News At A Glance";
+}
+
+<h2>@ViewBag.Message</h2>
+
+<div id="container">       
+    <div id="header">
+       <div id="aaglogo">
+            <img src="/Content/Images/aag_logo.png" />
+        </div>
+        <div id="aagTopRight">
+            <img id="topRightImage" src="/Content/Images/aag_top_right.png" />
+            <div id="buttons">
+                <img id="gridButton" disabled class="unselected" src="/Content/Images/grid.png" />
+                <img id="cloudButton" class="enabled"  src="/Content/Images/cloud.png"  />
+            </div>
+        </div>
+    </div>        
+    <div id="left" class="scroller"></div>
+    <div id="right" class="scroller"></div>
+    <div id="content"></div>
+    <div id="ticker">
+        <div class="Marquee">
+            <div id="MarqueeNews">
+	            <div id="MarqueeNewsText" class="scrollingtext" />
+            </div>
+        </div>
+        <div class="Marquee">
+            <div id="MarqueeQuotes">
+	            <div id="MarqueeQuotesText" class="scrollingtext" />
+            </div>
+        </div>
+        <div id="MarqueeNewsTitle">News</div>
+        <div id="MarqueeQuotesTitle">Ticker</div>
+    </div>
+</div>
+
+
+
+<div id="dialog" title="Upgrade Browser">
+	<p>Please update your browser to IE9 for the best experience.  <br /><br />Download IE9 from <a href="http://ie.microsoft.com/testdrive/">http://ie.microsoft.com/testdrive/</a>.</p>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#dialog").dialog({ autoOpen: false });
+
+        if ($.browser.msie && $.browser.version < 9) {
+            $("#dialog").dialog('open');
+        }
+        else {
+            startup.init('Z485739881');
+        }
+    });
+
+</script>
+
+<script id="QuoteDataTemplate_Small" type="text/x-jquery-tmpl">
+    ${ Last }
+</script>
+<script id="QuoteDataTemplate_Medium" type="text/x-jquery-tmpl">
+    <div id="QuoteDiv">
+        <span id="QuoteCompany">${ Company }</span><br />
+        <span id="QuoteLast">${ Last }</span>&nbsp;
+        <span id="QuoteChange" class="{{if parseFloat(Change) > 0}}Positive{{else}}Negative{{/if}}">${ Change }</span>&nbsp;
+        <span id="QuotePercentChange" class="{{if parseFloat(PercentChange) > 0}}Positive{{else}}Negative{{/if}}">${ PercentChange }%</span>
+    </div>
+    <div id="QuoteDetailsDiv">
+        <table style="font-size:8pt;">
+            <tr>
+                <td style="width:16%" class="Bold">Open</td>
+                <td style="width:16%" class="Bold">Day Low</td>
+                <td style="width:16%" class="Bold">Day High</td>
+            </tr>
+            <tr>
+                <td style="width:16%" class="Currency">${ Open }</td>
+                <td style="width:16%" class="Currency">${ DayLow }</td>
+                <td style="width:16%" class="Currency">${ DayHigh }</td>
+            </tr>
+        </table>
+    </div>
+    <div style="clear:both"></div>
+</script>
+<script id="QuoteDataTemplate_Large" type="text/x-jquery-tmpl">
+    <div style="float:left;width:40%;">
+        <div id="QuoteDiv">
+            <span id="QuoteCompany">${ Company }</span><br />
+            <span id="QuoteLast">${ Last }</span>&nbsp;
+            <span id="QuoteChange" class="{{if parseFloat(Change) > 0}}Positive{{else}}Negative{{/if}}">${ Change }</span>&nbsp;
+            <span id="QuotePercentChange" class="{{if parseFloat(PercentChange) > 0}}Positive{{else}}Negative{{/if}}">${ PercentChange }%</span>
+        </div>
+    </div>
+    <div style="float:right;width:60%;">
+        <table style="font-size:8pt;margin-top:17px;">
+            <tr>
+                <td style="width:12%" class="Bold" nowrap="true">Open</td>
+                <td style="width:12%" class="Currency" nowrap="true">${ Open }</td>
+                <td style="width:18%" class="Bold" nowrap="true">Day Low</td>
+                <td style="width:18%" class="Currency" nowrap="true">${ DayLow }</td>
+                <td style="width:16%" class="Bold" nowrap="true">Day High</td>
+                <td style="width:24%" class="Currency" nowrap="true">${ DayHigh }</td>
+            </tr>
+            <tr>
+                <td class="Bold" nowrap="true">Dividend</td>
+                <td class="Currency" nowrap="true">${ Dividend }</td>
+                <td class="Bold" nowrap="true">Market Cap</td>
+                <td class="Currency" nowrap="true">${ MarketCap }</td>
+                <td class="Bold" nowrap="true">Volume</td>
+                <td class="Currency" nowrap="true">${ Volume }</td>
+            </tr>
+        </table>
+    </div>
+    <div style="clear:both"></div>
+</script>
+
+<script id="TickerTemplate_News" type="text/x-jquery-tmpl">
+    {{each(i,news) News}}${ news }&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{/each}}    
+</script>
+
+<script id="TickerTemplate_Quotes" type="text/x-jquery-tmpl">
+    {{each(i,market) Markets}}
+        <span style="margin-left:3px;">${ market.Symbol }</span>&nbsp;
+        <span class="TickerLast">${ market.Last }</span>&nbsp;
+        <span style="margin-right:10px;" class="{{if parseFloat(Change) > 0}}Positive{{else}}Negative{{/if}}">{{if parseFloat(Change) > 0}}+{{else}}-{{/if}}${ Change }</span>
+    {{/each}} 
+</script>

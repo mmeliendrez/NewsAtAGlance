@@ -33,7 +33,10 @@ namespace NewsAtAGlance.Repository.Helpers
                 XDocument doc = XDocument.Load(url);
                 return doc;
             }
-            catch { }
+            catch (Exception e) 
+            {
+                var a = e.Message;
+            }
             return null;
         }
 
