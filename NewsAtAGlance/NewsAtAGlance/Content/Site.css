@@ -102,11 +102,18 @@ header h1, #header h1 {
 
 #main {
     padding: 30px 30px 15px 30px;
-    background-color: #fff;
+    background-color: #0FA86F;
     border-radius: 4px 0 0 0;
     -webkit-border-radius: 4px 0 0 0;
     -moz-border-radius: 4px 0 0 0;
 }
+
+#container {width: 1260px; margin: auto; border: 0px solid #fff; }
+#container #header { padding-bottom: 0px; height:68px; width: 1180px; margin: auto; position:relative;  font-family : "TradeGothicLTStd-Bold"; font-size: 30px;}
+#container #header input[type=button] {float: right; margin-top: 25px; }
+#container #content { position:relative; margin: auto; height:562px; width: 1180px;  overflow: hidden; } 
+#container #left { float: left; background: url(Images/left_arrow.png) no-repeat; vertical-align:middle;}
+#container #right { float: right; background: url(Images/right_arrow.png) no-repeat; vertical-align:middle;}
 
 footer, 
 #footer {

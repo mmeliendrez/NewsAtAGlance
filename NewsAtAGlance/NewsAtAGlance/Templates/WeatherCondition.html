@@ -1,0 +1,51 @@
+﻿<script id="WeatherConditionTemplate_Small" type="text/x-jquery-tmpl">
+     <div class="content">
+        <header>
+            <span>WEATHER CONDITION</span>
+        </header>
+        <section>
+            <span style="font-size: 20pt">${CityCompleteLocation}</span>
+        </section>
+    </div>
+</script>
+
+<script id="WeatherConditionTemplate_Medium" type="text/x-jquery-tmpl">
+    <div class="content">
+        <header>
+           <span>WEATHER CONDITION</span>
+        </header>
+        <section style="padding-top:10px;">
+            {{tmpl '#AccountDetailsTemplate_Base'}}
+        </section>
+    </div>
+</script>
+
+<script id="WeatherConditionTemplate_Large" type="text/x-jquery-tmpl">
+     <div class="content">
+        <header>
+            <span>WEATHER CONDITION</span>
+        </header>
+        <section style="padding-top:10px;">
+            {{tmpl '#AccountDetailsTemplate_Base'}}
+        </section>
+    </div>
+    <div class="stickyfooter" style="background-color: #fbcccc; ">       
+        <div class="Left Bold">Humedad:</div>
+        <div class="Right">
+            <span class="Currency">${Humidity}</span>
+        </div>
+        <div class="Clear" />           
+    </div> 
+</script>
+
+<script id="WeatherConditionTemplate_Base" type="text/x-jquery-tmpl">
+    <div class="Left">${CityCompleteLocation}</div> 
+    <div class="Right">
+        <span>${TempCelcius}°C</span>
+    </div>
+    <div class="Clear" />
+
+    <div class="Left" style="margin-top:6px;">>${Condition}</div> 
+    
+    <div class="Clear" />
+</script>
