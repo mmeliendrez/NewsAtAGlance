@@ -1,4 +1,5 @@
-﻿*/bin/*
-*/obj/*
+﻿#Ignore these files
+obj
+bin
 *.user
 *.suo
