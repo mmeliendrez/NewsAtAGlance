@@ -39,6 +39,7 @@
     },
 
     renderWeatherTiles = function (data) {
+
         $('div.tile[id^="WeatherCondition"]').each(function () {
             var tileDiv = $(this);
             renderTile(data, tileDiv, 0);
@@ -46,6 +47,7 @@
     },
 
     renderTile = function (data, tile, fadeInAmount) {
+
         if (fadeInAmount > 0) tile.fadeOut(fadeInAmount);
         if (fadeInAmount > 0) {
             tile.fadeIn(fadeInAmount,

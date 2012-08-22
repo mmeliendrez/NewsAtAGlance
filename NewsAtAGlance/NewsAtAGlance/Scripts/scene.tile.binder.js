@@ -20,10 +20,12 @@ var tileBinder = function () {
 
     tmpl = function (tileName, size, data) {
         var template = $('#' + tileName + 'Template_' + size);
-        if (data != null)
+        if (data != null) {
             return template.tmpl(data);
-        else
+        }
+        else {
             return template.html();
+        }
     };
 
     return {

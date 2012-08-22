@@ -2,6 +2,7 @@
 var startup = function () {
     var windowFocused = true,
     init = function (city) {
+        
         //track if user switches tabs or not otherwise
         //timers may queue up in some browsers like Chrome
         $(window).focus(function () {
@@ -11,7 +12,7 @@ var startup = function () {
         $(window).blur(function () {
             windowFocused = false;
         });
-
+        
         var defaultPositions = sceneLayoutService.get();
 
         $('#gridButton').click(function () {
@@ -21,8 +22,9 @@ var startup = function () {
         $('#cloudButton').click(function () {
             sceneStateManager.changeScene();
         });
-
+        
         sceneStateManager.init(defaultPositions);
+        
         sceneStateManager.renderTiles(city);
 
         setTimeout(function () {

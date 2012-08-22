@@ -21,22 +21,9 @@
     <div id="content"></div>
 </div>
 
-
-
-<div id="dialog" title="Upgrade Browser">
-	<p>Please update your browser to IE9 for the best experience.  <br /><br />Download IE9 from <a href="http://ie.microsoft.com/testdrive/">http://ie.microsoft.com/testdrive/</a>.</p>
-</div>
-
 <script type="text/javascript">
     $(document).ready(function () {
-        $("#dialog").dialog({ autoOpen: false });
-
-        if ($.browser.msie && $.browser.version < 9) {
-            $("#dialog").dialog('open');
-        }
-        else {
-            startup.init('Tandil');
-        }
+        startup.init('Tandil');
     });
 
 </script>
